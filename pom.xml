@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>graphology</artifactId>
-    <version>0.25.1-SNAPSHOT</version>
+    <version>0.25.1</version>
     <name>Graphology</name>
     <description>WebJar for Graphology</description>
     <url>http://webjars.org</url>
@@ -33,7 +33,7 @@
         <developer>
             <id>wthrajat</id>
             <name>Rajat Khanduri</name>
-            <email></email>
+            <email />
         </developer>
     </developers>
 
@@ -49,7 +49,7 @@
         <url>http://github.com/webjars/graphology</url>
         <connection>scm:git:https://github.com/webjars/graphology.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/graphology.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>graphology-0.25.1</tag>
     </scm>
     
     <build>
@@ -78,11 +78,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}"/>
-                                <get src="${upstream.url}/graphology-library.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/graphology-library.min.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/graphology.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/graphology.min.js" dest="${destDir}"/>
+                                <mkdir dir="${destDir}" />
+                                <get src="${upstream.url}/graphology-library.js" dest="${destDir}" />
+                                <get src="${upstream.url}/graphology-library.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/graphology.js" dest="${destDir}" />
+                                <get src="${upstream.url}/graphology.min.js" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
